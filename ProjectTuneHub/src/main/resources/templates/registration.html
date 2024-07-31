@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+	<head>
+	<title>
+		Registration form
+	</title>
+	<link rel=stylesheet type=text/css th:href="@{/index.css}">
+	</head> 
+	<body>
+		<h2>Registration form</h2>   
+		<form action="register" method="post">                             
+	<br>
+	    <label>Userid:</label>
+		<input type="text" name="userid" ></br>
+		
+		</br>
+		
+		<label>Name:</label></br>
+            <input type="text" name="name" >
+			</br>
+			
+		 <label >Email:</label><br>
+		 <input type="email"  name="email" >
+		 </br>
+		 
+		 <label for="password">Password:</label><br>
+		     <input type="password" id="password" name="password"><br>	
+		   
+		  <label>Gender</label>
+		Male<input type="radio"  name="gender" value="male" >
+		 Female<input type="radio" name="gender" value="female" >
+		   </br>
+		   
+		   <label >Role</label>
+		Admin<input type="radio"  value="admin"  name="role">
+		
+	Customer<input type="radio" value="customer" name="role">
+			
+				</br>
+				<label>Address</label>
+	          <textarea name="address"></textarea>
+		
+		</br>
+		<input type="submit" value="Submit" style="background-color: orange;">
+		
+		</form>
+		
+	</body>
+	
+	
+</head>
+</html>
+
+	
